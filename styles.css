@@ -1,0 +1,95 @@
+/* CSS style for animal cards */
+
+body {
+    display: flex;
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: whitesmoke;
+  }
+  100% {
+    background-color: wheat;
+  }
+
+}
+.main-body {
+    margin: 0;
+    padding: 0;
+}
+.animal {
+	font-family: fantasy;
+    font-size: 3em;
+    letter-spacing: 5px;
+	border-bottom: 2px solid pink;
+	border-right: 2px solid pink;
+    width: 400px;
+    animation: shake 5s infinite;
+    padding-top: 10px;
+	text-align: center;
+	-moz-box-shadow:4px 4px 5px #888888;
+	-ms-box-shadow: 4px 4px 5px #888888;
+	-webkit-box-shadow: 4px 4px 5px #888888;
+	-o-box-shadow: 4px 4px 5px #888888;
+	box-shadow: 4px 4px 5px #888888;
+	margin-top: 10px;
+}
+
+@keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,30%,50%,70%,90%
+     {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,40%,60%,80%
+     {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  .animal-img {
+      justify-content: inherit;
+  }
+  
+  img {
+      width: 300px;
+	margin: 10px;
+    border: 10px;
+    box-shadow: 5px 10px;
+    padding-bottom: 5px;
+
+  }
+  img:hover {
+	transform: scale(1.1);
+}
+.span {
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.animal-facts {
+    font-style: normal;
+    word-spacing: 2px;
+    text-decoration: underline;
+    font-family: cursive;
+}
+.list-items {
+    list-style: none outside none;
+}
+ .animal-desc {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     word-spacing: 2px;
+     font-style: inherit;
+     font-weight: 3px;
+ }
+ .animal-desc::after{
+     content:  "I love Rabbit!";
+ }
